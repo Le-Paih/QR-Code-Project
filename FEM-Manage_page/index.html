@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bef0d87942.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-div">
+      <img src="logo.svg" alt="">
+    </div>
+    <button class="toggle-btn">
+      <img src="icon-hamburger.svg" alt="" id="toggle-icon">
+    </button>
+    <!-- <button class="toggle-btn">
+      <img src="icon-close.svg" alt="">
+    </button> -->
+    <div class="sidebar">
+      <ul>
+        <li>
+          Pricing
+        </li>
+        <li>
+          Product
+        </li>
+        <li>
+          About Us
+        </li>
+        <li>
+          Careers
+        </li>
+        <li>
+          Community
+        </li>
+      </ul>
+    </div>
+    <button class="hdr-btn">
+      Get Started
+    </button>
+  </header>
+  <section class="main-body">
+    <article class="intro-section">
+      <div class="title-half">
+        <h1 class="title">Bring everyone together to build better products.</h1>
+        <p class="title-p">Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.</p>
+          <button class="title-btn">
+            Get Started
+          </button>
+      </div>
+      <div class="title-img">
+        <img src="illustration-intro.svg" alt="">
+      </div>
+    </article>
+    <article class="manage-section">
+      <div class="manage-des">
+        <h2>What’s different about Manage?</h2>
+        <p> Manage provides all the functionality your team needs, without 
+          the complexity. Our software is tailor-made for modern digital 
+          product teams. 
+        </p>
+      </div>
+      <div class="manage-list">
+        <div class="list-item">          
+          <h3><span class="number-spn">01</span>Track company-wide progress</h3>
+          <p>See how your day-to-day tasks fit into the wider vision. Go from 
+            tracking progress at the milestone level all the way done to the 
+            smallest of details. Never lose sight of the bigger picture again.</p>
+        </div>
+        <div class="list-item">         
+          <h3><span class="number-spn">02</span>Advanced built-in reports</h3>
+          <p>Set internal delivery estimates and track progress toward company 
+            goals. Our customisable dashboard helps you build out the reports 
+            you need to keep key stakeholders informed.</p>
+        </div>
+        <div class="list-item">         
+          <h3><span class="number-spn">03</span>Everything you need in one place</h3>
+          <p>Stop jumping from one service to another to communicate, store files, 
+            track tasks and share documents. Manage offers an all-in-one team 
+            productivity solution.</p>
+        </div>
+      </div>
+    </article>
+    <article class="wts">
+      <h2>What they’ve said</h2>
+      <div class="carousel">
+        <div class="card">
+          <img src="avatar-anisha.png" alt="" class="icon" id="icon">
+          <h4>Anisha Li</h4>
+          <p>“Manage has supercharged our team’s workflow. The ability to maintain 
+            visibility on larger milestones at all times keeps everyone motivated.”</p>
+        </div>
+        <div class="card">
+          <img src="avatar-ali.png" alt="" class="icon" id="icon">
+          <h4>Ali Bravo</h4>
+          <p>“We have been able to cancel so many other subscriptions since using 
+            Manage. There is no more cross-channel confusion and everyone is much 
+            more focused.”</p>
+        </div>
+        <div class="card">
+          <img src="avatar-richard.png" alt="" class="icon" id="icon">
+          <h4>Richard Watts</h4>
+          <p>“Manage allows us to provide structure and process. It keeps us organized 
+            and focused. I can’t stop recommending them to everyone I talk to!”</p>
+        </div>
+        <div class="card">
+          <img src="avatar-shanai.png" alt="" class="icon" id="icon">
+          <h4>Shanai Gough</h4>
+          <p>“Their software allows us to track, manage and collaborate on our projects 
+            from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+        </div>
+      </div>
+
+      <div class="dots">
+        <span class="dot" onclick="currentCard(1)"></span>
+        <span class="dot" onclick="currentCard(2)"></span>
+        <span class="dot" onclick="currentCard(3)"></span>
+        <span class="dot" onclick="currentCard(4)"></span>
+      </div>
+      
+      <button class="btn-3">
+        Get Started
+      </button>
+    </article>
+    <article class="simplify">
+      <h1>Simplify how your team works today.
+      </h1>
+      <button>Get Started</button>
+    </article>
+    <footer>
+      <div class="footer-div">
+      <div class="email-with-err">
+        <div class="email-div">
+          <!-- <form action="email"> -->
+          <input type="email" placeholder="Updates in your inbox…" class="email" id="email">
+          <button class="go" type="submit">Go</button>
+        <!-- </form> -->
+        </div>
+        <div class="error-msg error-hidden">
+          <p>Please insert a valid email</p>
+        </div>
+      </div>
+      <div class="ftr-text">
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Pricing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+        </div>
+        <div class="footer-links">
+          <a href="#">Careers</a>
+          <a href="#">Community</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="logos">
+      <div class="logo-icons">
+          <a href="/"><img src="icon-facebook.svg" alt=""></a>
+          <a href="/"><img src="icon-youtube.svg" alt=""></a>
+          <a href="/"><img src="icon-twitter.svg" alt=""></a>
+          <a href="/"><img src="icon-pinterest.svg" alt=""></a>
+          <a href="/"><img src="icon-instagram.svg" alt=""></a>
+        </div>
+        <div class="ftr-logo">
+          <img src="logo - FTR.svg" alt="" class="f-logo">
+        </div>
+      </div>
+      </div>
+    <p class="copyright">Copyright 2020. All Rights Reserved</p>
+    </footer>
+  </section>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Le-Paih">Luis Le Paih</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

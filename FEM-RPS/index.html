@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+ 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(0, 100%, 50%); }
+  </style>
+</head>
+<body>
+  <section class="main">
+
+    <header>
+      <div class="logo-div">
+        <img src="logo.svg" alt="">
+      </div>
+      <div class="right-div">
+        <div class="score-div">
+          <p class="score-text">Score</p>
+          <h2 class="score-number">0</h2>
+        </div>
+      </div>
+    </header>
+
+    <div class="hands">
+      
+      <div class="paper-wrapper">
+        <div class="paper hand">
+          <img src="icon-paper.svg" id="paper" alt="" onclick="pickUserHand('paper')">
+        </div>
+      </div>
+      
+      <div class="scissors-wrapper">
+        <div class="scissors hand">
+          <img src="icon-scissors.svg" id="scissors" alt="" onclick="pickUserHand('scissors')">
+        </div>
+      </div>
+
+      <div class="rock-wrapper">
+        <div class="rock hand">
+          <img src="icon-rock.svg" id="rock" alt=""  onclick="pickUserHand('rock')">
+        </div>
+      </div>
+    
+    </div>
+    <div class="contest hidden">
+      <div class="userPicked"> 
+        <div class="userPicked-wrapper">
+          <div class="img-bg">
+            <img src="" alt="" id="pickedIcon">
+          </div>
+        </div>
+        <h1>You Picked</h1>
+      </div>
+
+      <div class="computerPicked">
+        <div class="bg-blue"></div>
+        <div class="computerChoice-wrapper hidden">
+          <div class="pc-img-bg">
+            <img id="computerPickImage" src="" alt="">
+          </div>
+        </div>
+        <h1 class="THP">The House Picked</h1>
+      </div>
+    </div>
+ 
+    <div class="result-div hidden">
+      <h1 class="you"></h1>
+      <button class="play-btn">
+        Play Again
+      </button>
+    </div>
+
+    <div class="rules">
+      <button class="rules-btn">
+        Rules
+      </button>
+    </div>
+
+  </section>
+  <div class="modal-overlay">
+    <div class="modal">
+      <h1>Rules</h1>
+      <img src="image-rules.svg" alt="" class="rules-img">
+      <img src="icon-close.svg" alt="close" class="close-btn">
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Le-Paih">Luis Le Paih</a>.
+  </div>
+  
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
